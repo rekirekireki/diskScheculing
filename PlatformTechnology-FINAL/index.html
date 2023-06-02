@@ -62,7 +62,9 @@
         <button class="button" onclick="goToOtherPage1()">FIFO</button>
         <button class="button" onclick="goToOtherPage2()">SSTF</button>
         <button class="button" onclick="goToOtherPage3()">SCAN</button>
-        <button class="button" onclick="goToOtherPage4()">LOOK</button>
+        <button class="button" onclick="goToOtherPage4()">C-SCAN</button>
+        <button class="button" onclick="goToOtherPage5()">LOOK</button>
+        <button class="button" onclick="goToOtherPage6()">C-LOOK</button>
     </div>
 
     <script>
@@ -92,7 +94,13 @@
         window.location.href = "scanSimulator.html";
         }
         function goToOtherPage4() {
+        window.location.href = "cscanSimulator.html";
+        }
+        function goToOtherPage5() {
         window.location.href = "lookSimulator.html";
+        }
+        function goToOtherPage6() {
+        window.location.href = "clookSimulator.html";
         }
 
 

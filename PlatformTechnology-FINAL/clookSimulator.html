@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <title>Scan Algorithm - Implementation</title>
-    
+    <title>Circular Look - Implementation</title>
+    <link rel="stylesheet" href="styleSub.css">
     <link rel="stylesheet" type="text/css" href="disk_algo.css" />
 
     <link rel="stylesheet" type="text/css"
@@ -32,9 +32,7 @@
 
     <link href="//fonts.googleapis.com/css2?family=Manrope:wght@200;400;600&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="styleSub.css">
-
-    <script src="disk_algo3.js"></script>
+    <script src="disk_algo6.js"></script>
 </head>
 
 <body style="scroll-behavior: smooth; text-decoration: none; outline: none">
@@ -51,10 +49,8 @@
         </nav>
     </div>
 
-
-
     <div class="pageContainer">
-        <h1 class="page-title">Scan Algorithm</h1>
+        <h1 class="page-title">Circular Look Algorithm</h1>
         <div class="inputs">
             <div class="number-input">
                 <label for="numbers">Input Queue (separated with space):
@@ -78,7 +74,6 @@
                 </div>
                 <br />
                 <br />
-
                 <div class="btnVisualizeContainer">
                     <button onclick="Calculate();" id="btnVisualize" type="button" class="btn btn-lg btn-primary">
                         Calculate
@@ -90,14 +85,13 @@
             <br />
         </div>
         <div class="canvas">
-                <canvas id="line-chart"></canvas>
-                <button type="submit" class="btn btn-primary print printChart">
+            <canvas id="line-chart"></canvas>
+            <button type="submit" class="btn btn-primary print printChart">
                     Download Chart
                 </button>
-            </div>
+        </div>
         <div id="count-output"></div>
     </div>
-
     <!-- Template JavaScript -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
 
@@ -143,6 +137,11 @@
         });
     </script>
     <!--//MENU-JS-->
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <div class="container">
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
 
         <!--For Printing Chart-->
         <script src="https://cdn.jsdelivr.net/npm/jspdf@1.5.3/dist/jspdf.min.js"></script>
